@@ -5,7 +5,6 @@ type Contact = {
   name: string;
   email: string;
   mobile: string;
-  budget: string;
   description: string;
 };
 
@@ -38,7 +37,6 @@ const Formdata: React.FC = () => {
             <th className="p-3 text-left">Name</th>
             <th className="p-3 text-left">Email</th>
             <th className="p-3 text-left">Mobile</th>
-            <th className="p-3 text-left">Budget</th>
             <th className="p-3 text-left">Description</th>
             <th className="p-3 text-left">Actions</th>
           </tr>
@@ -49,7 +47,6 @@ const Formdata: React.FC = () => {
               <td className="p-3">{contact.name}</td>
               <td className="p-3">{contact.email}</td>
               <td className="p-3">{contact.mobile}</td>
-              <td className="p-3">{contact.budget}</td>
               <td className="p-3">{contact.description}</td>
               <td className="p-3 flex gap-2">
                 <button className="bg-green-500 text-white px-3 py-1 rounded text-xs hover:bg-green-600">
